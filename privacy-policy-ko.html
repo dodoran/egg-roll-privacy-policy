@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EggRoll Premium - 개인정보 처리방침</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple SD Gothic Neo", "Malgun Gothic";
+            background: white;
+            color: #625A56;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #625A56;
+            font-weight: bold;
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            color: #625A56;
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            color: #625A56;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #625A56;
+            margin-bottom: 12px;
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        li {
+            color: #625A56;
+            margin-bottom: 8px;
+        }
+
+        .note {
+            color: #9A9299;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        a {
+            color: #625A56;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #4a4340;
+        }
+
+        .last-updated {
+            color: #9A9299;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .lang-switch a {
+            color: #625A56;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 6px 12px;
+            border: 1px solid #9A9299;
+        }
+
+        .lang-switch a:hover {
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="privacy_policy.html">English</a>
+        </div>
+
+        <h1>개인정보 처리방침</h1>
+        <p class="last-updated">최종 업데이트: 2025년 10월 29일</p>
+
+        <div class="section">
+            <p>EggRoll은 코코포리아(CCFolia, ccfolia.com) 플랫폼에 향상된 기능을 제공하는 크롬 확장 프로그램입니다. 저희는 귀하의 개인정보를 보호하기 위해 최선을 다하고 있습니다.</p>
+        </div>
+
+        <div class="section">
+            <h2>1. 수집하는 정보</h2>
+
+            <h3>1.1 라이선스 정보</h3>
+            <p>프리미엄 라이선스를 활성화할 때 다음 정보를 수집합니다:</p>
+            <ul>
+                <li><span class="highlight">라이선스 키:</span> 라이선스 검증을 위해 사용</li>
+                <li><span class="highlight">이메일 주소:</span> 라이선스 소유자 확인을 위해 사용</li>
+                <li><span class="highlight">기기 ID:</span> 기기를 식별하기 위해 무작위로 생성된 UUID</li>
+            </ul>
+            <p class="note">기기 ID는 간단한 무작위 식별자로, 로컬에 저장됩니다. 개인정보나 하드웨어 사양은 전혀 포함하지 않습니다.</p>
+
+            <h3>1.2 로컬 설정</h3>
+            <p>확장 프로그램의 환경설정은 사용자 기기에 로컬로 저장됩니다:</p>
+            <ul>
+                <li>테마 설정 (색상, 글꼴)</li>
+                <li>커스텀 매크로</li>
+            </ul>
+            <p class="note">이 데이터는 기기에만 저장되며, Chrome 동기화를 활성화한 경우에만 동기화됩니다. 저희는 이 데이터에 접근할 수 없습니다.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. 정보 사용 목적</h2>
+            <p>라이선스 정보는 다음 목적으로만 사용됩니다:</p>
+            <ul>
+                <li>유효한 라이선스 보유 여부 확인</li>
+                <li>2대 기기 활성화 제한 적용</li>
+                <li>기기 활성화 관리 기능 제공</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3. 데이터 저장</h2>
+            <p>라이선스 데이터는 Firebase Cloud Firestore에 다음 보안 조치와 함께 저장됩니다:</p>
+            <ul>
+                <li>HTTPS 암호화</li>
+                <li>인증된 요청만 허용</li>
+                <li>요청 빈도 제한(Rate limiting)</li>
+            </ul>
+            <p>로컬 설정은 Chrome의 storage API를 사용하여 저장되며, Chrome 동기화가 활성화되지 않은 경우 기기 밖으로 전송되지 않습니다.</p>
+        </div>
+
+        <div class="section">
+            <h2>4. 데이터 공유</h2>
+            <p><span class="highlight">저희는 귀하의 데이터를 제3자에게 판매, 거래, 공유하지 않습니다.</span></p>
+            <p>귀하의 데이터는 라이선스 검증 및 확장 프로그램 기능 제공 목적으로만 사용됩니다.</p>
+        </div>
+
+        <div class="section">
+            <h2>5. 귀하의 권리</h2>
+            <p>다음과 같은 권리를 행사하실 수 있습니다:</p>
+            <ul>
+                <li>라이선스를 사용 중인 기기 목록 확인</li>
+                <li>기기 활성화를 해제하여 활성화 슬롯 확보</li>
+                <li>확장 프로그램을 제거하여 모든 로컬 데이터 삭제</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>6. 제3자 서비스</h2>
+            <p>이 확장 프로그램은 라이선스 저장을 위해 Firebase(Google)를 사용합니다. Firebase의 개인정보 처리방침은 <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>에서 확인하실 수 있습니다.</p>
+        </div>
+
+        <div class="section">
+            <h2>7. 문의하기</h2>
+            <p>개인정보 처리방침에 대한 문의사항이 있으시면 다음으로 연락해 주세요: dodoran682@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
